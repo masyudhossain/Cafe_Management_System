@@ -1,0 +1,65 @@
+$secondary-color: #141a33;
+$primary-color: #F48023;
+$White: #ffffff;
+$white-one: #fcfcfc;
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 57px;
+    background-color: $primary-color;
+    height: auto;
+
+
+    a.active {
+        background: $secondary-color;
+    }
+
+    a {
+        font-weight: 300;
+        font-size: 15px;
+        border-radius: 0px;
+        color: $White;
+    }
+
+    a.ant-btn {
+        &:hover {
+            color: $White;
+            background: $secondary-color;
+        }
+    }
+
+    img {
+        width: 180px;
+    }
+
+    .img_profile {
+        width: 25px;
+    }
+}
+
+I .active-button {
+    border-radius: 0px !important;
+    padding: 2px 5px limportant;
+    background: $secondary-color;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $primary-color;
+    padding: 0px;
+}
+
+// .background-image {
+//     background-image: url('cafe_bg.jpg'); /* Update the path to your image file */
+//     background-size: cover; /* Adjusts the size of the background image */
+//     background-repeat: no-repeat; /* Prevents the background image from repeating */
+//     background-position: center; /* Centers the background image */
+//     height: 100vh; /* Adjusts the height of the background image */
+//     overflow: auto; /* Allows the content to scroll if it exceeds the viewport height */
+//     display: flex;
+//     flex-direction: column; /* Ensures children elements stack vertically */
+// }
