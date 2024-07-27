@@ -90,3 +90,80 @@ spring.datasource.url=jdbc:mysql://localhost:3306/cafe_management_system
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
+`````
+##Spring boot code
+
+```code
+package com.example.cafemanagement;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CafeManagementSystemApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CafeManagementSystemApplication.class, args);
+    }
+}
+````
+##Example controller
+
+```Code
+package com.example.cafemanagement.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, Cafe Management System!";
+    }
+}
+`````
+##Maven Dependencies
+Add the following dependencies to your pom.xml file:
+
+```Maven dependencies
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+</dependencies>
+`````
+##Angular Code
+Example Component
+Create a new component using Angular CLI:
+
+```angular
+ng generate component hello-world
+```
+##hello-world.component.ts
+```angular
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-hello-world',
+  templateUrl: './hello-world.component.html',
+  styleUrls: ['./hello-world.component.css']
+})
+export class HelloWorldComponent {
+  message: string = 'Hello, Cafe Management System!';
+}
+`````````
