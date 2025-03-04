@@ -14,7 +14,6 @@ The Cafe Management System (CMS) is a comprehensive application designed to stre
 - [Spring Boot Code](#spring-boot-code)
 - [Maven Dependencies](#maven-dependencies)
 - [Angular Code](#angular-code)
-- [License](#license)
 
 ## Features
 
